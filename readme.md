@@ -4,4 +4,4 @@
 - Amrita Vishwa Vidyapeetham - Amaravati Campus
 - AIE 2nd yr
 
-## Copyright Saksham Kumar 2023. All rights reserved to the respective owners
+## Copyright Saksham Kumar 2023. All rights reserved.
