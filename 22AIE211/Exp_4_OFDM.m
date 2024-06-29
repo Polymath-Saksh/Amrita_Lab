@@ -31,25 +31,10 @@ tx_signal = time_symbols_cp(:);
 % xlabel('Time');
 % ylabel('Amplitude');
 
-% Study the effects of multipath and noise on the OFDM signal.
-
-% Multipath channel parameters
-num_paths = 3; % Number of paths
-delay_spread = 5; % Delay spread in samples
-
-% Generate random channel taps
-channel_taps = randn(num_paths, 1) + 1i*randn(num_paths, 1);
-
-% Apply the channel to the signal
-rx_signal = conv(tx_signal, channel_taps);
-
-% Add AWGN
-SNR_dB = 10;
-rx_signal_noisy = awgn(rx_signal, SNR_dB, 'measured');
-
-% Plot the received signal
+% Frequency domain
+frequency_symbols = fft(data_symbols);
 figure;
-plot(real(rx_signal_noisy));
-title('Received OFDM Signal');
-xlabel('Time');
+plot(abs(frequency_symbols));
+title('OFDM Signal in Frequency Domain');
+xlabel('Frequency');
 ylabel('Amplitude');
