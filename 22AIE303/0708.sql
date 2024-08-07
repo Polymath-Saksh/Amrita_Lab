@@ -1,6 +1,6 @@
 create table department(Name varchar(20) primary key,
                         building varchar(15),
-                        Budget numeric(12,2));
+                        Budget numeric(12,2)); -- 22AIE303/0708.sql
 DESC department;
 INSERT INTO department VALUES('CSE','Taylor',100);
 INSERT INTO department VALUES('Biology','Watson',200);
