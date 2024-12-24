@@ -1,0 +1,1 @@
+Cryptography is the practice of securing information by transforming it into an unreadable format. It ensures data confidentiality, integrity, and authentication.
